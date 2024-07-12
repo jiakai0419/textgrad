@@ -71,7 +71,7 @@ class StringBasedFunction(Function):
 
         # Create the response variable
         response = Variable(
-            value=response_string,
+            value=str(response_string),
             predecessors=list(inputs.values()),
             role_description=response_role_description
         )
